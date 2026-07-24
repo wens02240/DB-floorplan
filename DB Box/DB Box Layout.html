@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="sytle.css">
+        <title>DB Box</title>
+    </head>
+    <body>
+        <!-- App Shell 
+        <div class="app-shell">
+            <aside class="sidebar">
+                <a class="brand" href="#overview" aria-label="DB Box 首页">
+                    <span class="brand-mark">DB</span>
+                    <span>DB Box</span>
+                </a>
+                <nav class="main-nav" aria-label="主导航">
+                    <a class="nav-item active" href="#overview"><span>◈</span>总览</a>
+                    <a class="nav-item" href="#devices"><span>◉</span>我的设备</a>
+                    <a class="nav-item" href="#rooms"><span>◌</span>房间</a>
+                    <a class="nav-item" href="#settings"><span>⚙</span>设置</a>
+                </nav>
+                <div class="sidebar-footer">
+                    <div class="avatar">W</div>
+                    <div>
+                        <strong>Wei Sheng</strong>
+                        <small>管理员</small>
+                    </div>
+                </div>
+            </aside>
+        -->
+            <main class="content" id="overview">
+                <header class="topbar">
+                    <div>
+                        <p class="eyebrow">欢迎回来</p>
+                        <h1>智能家居总览</h1>
+                    </div>
+                    <button class="notification" type="button" aria-label="通知">🔔<span></span></button>
+                </header>
+
+                <section class="hero">
+                    <div>
+                        <p>家，一切安好</p>
+                        <h2>当前室温 24°C</h2>
+                        <span>吉隆坡 · 晴 · 适宜</span>
+                    </div>
+                </section>
+
+                <section class="stats" aria-label="设备状态">
+                    <article><img src="photos/light.svg" alt=""><div><strong>12</strong><span>盏灯已开启</span></div></article>
+                    <article><img src="photos/fan.svg" alt=""><div><strong>3</strong><span>设备正在运行</span></div></article>
+                    <article><img src="photos/plug.svg" alt=""><div><strong>1.28 kW</strong><span>当前用电量</span></div></article>
+                </section>
+
+                <div class="hero-houses" aria-label="房屋示意图">
+                    <img src="photos/house_1.svg" alt="房屋示意图">
+                    <img src="photos/house_2.svg" alt="房屋示意图">
+                </div>
+
+                <section class="section-heading screen-info">
+                    <div>
+                        <p>当前屏宽：
+                            <strong id="screen-width">0</strong> px
+                        </p>
+                        <h2>DB Box 面板</h2>
+                        <p>共 4 行，每行 18 个位置</p>
+                    </div>
+                    <a href="#devices">查看配电布局</a>
+                </section>
+
+                <section class="db-panel" id="devices" aria-label="DB Box 设备面板">
+                    <div class="db-row-label">第 1 行</div>
+                    <div class="db-grid">
+                        <button class="db active" type="button">DB 01</button>
+                        <button class="db active" type="button">DB 02</button>
+                        <button class="db active" type="button">DB 03</button>
+                        <button class="db active" type="button">DB 04</button>
+                        <button class="db active" type="button">DB 05</button>
+                        <button class="db active" type="button">DB 06</button>
+                        <button class="db active" type="button">DB 07</button>
+                        <button class="db active" type="button">DB 08</button>
+                        <button class="db active" type="button">DB 09</button>
+                        <button class="db active" type="button">DB 10</button>
+                        <button class="db active" type="button">DB 11</button>
+                        <button class="db active" type="button">DB 12</button>
+                        <button class="db active" type="button">DB 13</button>
+                        <button class="db active" type="button">DB 14</button>
+                        <button class="db active" type="button">DB 15</button>
+                        <button class="db active" type="button">DB 16</button>
+                        <button class="db active" type="button">DB 17</button>
+                        <button class="db empty" aria-label="第 18 位空置"></button>
+                    </div>
+
+                    <div class="db-row-label">第 2 行</div>
+                    <div class="db-grid">
+                        <button class="db active" type="button">DB 01</button>
+                        <button class="db active" type="button">DB 02</button>
+                        <button class="db active" type="button">DB 03</button>
+                        <button class="db active" type="button">DB 04</button>
+                        <button class="db active" type="button">DB 05</button>
+                        <button class="db active" type="button">DB 06</button>
+                        <button class="db active" type="button">DB 07</button>
+                        <button class="db active" type="button">DB 08</button>
+                        <button class="db active" type="button">DB 09</button>
+                        <button class="db active" type="button">DB 10</button>
+                        <button class="db active" type="button">DB 11</button>
+                        <button class="db active" type="button">DB 12</button>
+                        <button class="db active" type="button">DB 13</button>
+                        <button class="db active" type="button">DB 14</button>
+                        <button class="db active" type="button">DB 15</button>
+                        <button class="db active" type="button">DB 16</button>
+                        <button class="db active" type="button">DB 17</button>
+                        <button class="db empty" aria-label="第 18 位空置"></button>
+                    </div>
+
+                    <div class="db-row-label">第 3 行</div>
+                    <div class="db-grid">
+                        <button class="db active span-3" type="button">DB<br>01-03</button>
+                        <button class="db active span-3" type="button">DB<br>04-06</button>
+                        <button class="db active" type="button">DB 07</button>
+                        <button class="db active" type="button">DB 08</button>
+                        <button class="db active" type="button">DB 09</button>
+                        <button class="db active" type="button">DB 10</button>
+                        <button class="db active" type="button">DB 11</button>
+                        <button class="db active" type="button">DB 12</button>
+                        <button class="db active span-3" type="button">DB<br>13-15</button>
+                        <button class="db active" type="button">DB 16</button>
+                        <button class="db empty" aria-label="第 17 位空置"></button>
+                        <button class="db empty" aria-label="第 18 位空置"></button>
+                    </div>
+
+                    <div class="db-row-label">第 4 行</div>
+                    <div class="db-grid">
+                        <button class="db active span-3" type="button">DB<br>01-03</button>
+                        <button class="db active span-3" type="button">DB<br>04-06</button>
+                        <button class="db empty" aria-label="第 7 位空置"></button>
+                        <button class="db empty" aria-label="第 8 位空置"></button>
+                        <button class="db empty" aria-label="第 9 位空置"></button>
+                        <button class="db empty" aria-label="第 10 位空置"></button>
+                        <button class="db empty" aria-label="第 11 位空置"></button>
+                        <button class="db empty" aria-label="第 12 位空置"></button>
+                        <button class="db empty" aria-label="第 13 位空置"></button>
+                        <button class="db empty" aria-label="第 14 位空置"></button>
+                        <button class="db empty" aria-label="第 15 位空置"></button>
+                        <button class="db empty" aria-label="第 16 位空置"></button>
+                        <button class="db empty" aria-label="第 17 位空置"></button>
+                        <button class="db empty" aria-label="第 18 位空置"></button>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <script>
+            const firstDbButton = document.querySelector('.db-grid .db.active');
+            const houseDiagram = document.querySelector('.hero-houses');
+
+            if (firstDbButton && houseDiagram) {
+                const lightIcon = document.createElement('img');
+                lightIcon.className = 'house-light';
+                lightIcon.src = 'photos/light.svg';
+                lightIcon.alt = '灯光已开启';
+                houseDiagram.append(lightIcon);
+
+                firstDbButton.setAttribute('aria-pressed', 'false');
+                firstDbButton.addEventListener('click', () => {
+                    const isOn = houseDiagram.classList.toggle('light-on');
+                    firstDbButton.setAttribute('aria-pressed', String(isOn));
+                });
+            }
+        </script>
+
+        <script>
+        const screenWidthEl = document.getElementById('screen-width');
+
+        function updateScreenWidth() {
+         if (!screenWidthEl) return;
+            screenWidthEl.textContent = window.innerWidth;
+        }
+
+        window.addEventListener('resize', updateScreenWidth);
+        window.addEventListener('load', updateScreenWidth);
+        updateScreenWidth();
+        </script>
+        
+        
+    </body>
+</html>
